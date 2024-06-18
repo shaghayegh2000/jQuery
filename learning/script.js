@@ -42,17 +42,17 @@
 //     $(':button').fadeOut(3000);
 // });
 
-// const button = document.querySelectorAll('button');
-// const a = document.querySelector('.button6');
-// a.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     button.forEach(btn => {
-//         console.log(btn.classList[1].charAt(3));
-//         setTimeout(() => {
-//             $(btn).fadeOut(500*(btn.classList[1].charAt(3))); 
-//         }, 1000*(btn.classList[1].charAt(3)));
-//     });
-// })
+const button = document.querySelectorAll('button');
+const a = document.querySelector('.button6');
+a.addEventListener('click', (e) => {
+    e.preventDefault();
+    button.forEach(btn => {
+        console.log(btn.classList[0].charAt(3));
+        setTimeout(() => {
+            $(btn).fadeOut(500*(btn.classList[0].charAt(3))); 
+        }, 1000*(btn.classList[0].charAt(3)));
+    });
+})
 
 // $('.button6').click(function (e) { 
 //     e.preventDefault();
@@ -67,5 +67,34 @@
 // $('.text').click(function (e) { 
 //     e.preventDefault();
 //     $("input:blur").fadeOut(3000);
-
 // });
+
+// $('.button6').click(function (e) { 
+//     e.preventDefault();
+//     $(".parent input:eq(1)").fadeOut(3000);
+// });
+
+// $('.button6').click(function (e) { 
+//     e.preventDefault();
+//     $(".parent *:even").fadeOut(3000);
+// });
+// $('.button6').click(function (e) { 
+//     e.preventDefault();
+//     $(".parent *:odd").fadeOut(3000);
+// });
+
+// $('.button6').click(function (e) { 
+//     e.preventDefault();
+//     $(".parent :file").fadeOut(3000);
+// });
+
+// $('.button6').click(function (e) { 
+//     e.preventDefault();
+//     $(".parent *:gt(2)").fadeOut(3000);
+// });
+
+// $('body').click(function (e) { 
+//     e.preventDefault();
+//     $('#panel').slideUp("slow");
+// });
+
