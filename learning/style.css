@@ -7,3 +7,8 @@
         object-fit: cover;
     }
 }
+
+.navbarFix {
+    position: fixed;
+    top: 0;
+}

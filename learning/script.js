@@ -159,3 +159,87 @@
 //     //     }, 6000);
 //     // });
 // });
+
+
+// $(document).ready(function () {
+//     // $('.text').blur(function (e) { 
+//     //     const tex = e.type;
+//     //     $('.btn1').text(tex);
+//     // });
+
+//     // $('.text').focusout(function (e) {
+//     //     const tex = e.type;
+//     //     $('.btn1').text(tex);
+//     // });
+
+//     // $('.parent').focusin(function (e) {
+//     //     const tex = e.type;
+//     //     $('.btn1').text(tex);
+//     // });
+
+//     // $("#select").change(function (e) { 
+//     //     e.preventDefault();
+//     //     const tex = $("#select :selected").text();
+//     //     $(".text1").val(tex);
+//     // });
+
+//     // $(".form").submit(function (e) { 
+//     //     const text = $(".formInput").val().trim();
+//     //     if (text) {
+//     //         return;
+//     //     } else {
+//     //         e.preventDefault();
+//     //     }
+//     // });
+// });
+
+// $(window).resize(function () { 
+//     $(".btn1").text($(window).width());
+// });
+
+// $(window).scroll(function () {
+
+//     if ($(window).scrollTop() > 100) {
+//         $(".navbar").addClass("navbarFix");
+//     } else {
+//         $(".navbar").removeClass("navbarFix");
+//     }
+// });
+
+// $.holdReady(true)
+// $.getScript("test.js", function (script, textStatus, jqXHR) {
+//     $.holdReady(false);
+// });
+// $(document).ready(function() {
+//     show();
+// });
+
+// $(document).ready(() => {
+//     // $(".button7").on("click mouseover", () => {
+//     //     prompt("age")
+//     // });
+
+//     $(".button7").on({
+//         mouseenter: (e) => {
+//             alert("l")
+//         },
+//         mouseout: (e) => {
+//             $(".button7").off('mouseenter');
+//         }
+//     });
+// });
+
+// $(document).ready(function () {
+//     $(".button7").one("click", (e) => {
+//         e.preventDefault();
+//         alert("l")
+//     });
+// });
+
+// $(document).ready(function () {
+//     $(".btn1").on("click", (e) => {
+//         e.preventDefault();
+//         $(".button7").trigger("click");
+//     });
+// });
+
