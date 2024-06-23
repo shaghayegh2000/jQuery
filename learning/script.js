@@ -42,17 +42,17 @@
 //     $(':button').fadeOut(3000);
 // });
 
-const button = document.querySelectorAll('button');
-const a = document.querySelector('.button6');
-a.addEventListener('click', (e) => {
-    e.preventDefault();
-    button.forEach(btn => {
-        console.log(btn.classList[0].charAt(3));
-        setTimeout(() => {
-            $(btn).fadeOut(500*(btn.classList[0].charAt(3))); 
-        }, 1000*(btn.classList[0].charAt(3)));
-    });
-})
+// const button = document.querySelectorAll('button');
+// const a = document.querySelector('.button6');
+// a.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     button.forEach(btn => {
+//         console.log(btn.classList[0].charAt(3));
+//         setTimeout(() => {
+//             $(btn).fadeOut(500*(btn.classList[0].charAt(3))); 
+//         }, 1000*(btn.classList[0].charAt(3)));
+//     });
+// })
 
 // $('.button6').click(function (e) { 
 //     e.preventDefault();
@@ -98,3 +98,64 @@ a.addEventListener('click', (e) => {
 //     $('#panel').slideUp("slow");
 // });
 
+// $(document).ready(function () {
+//     // $(".button6").dblclick(function (e) { 
+//     //     e.preventDefault();
+//     //     $('.parent').fadeOut(500);
+//     // });
+
+//     // $(".button6").hover(function (e) {
+//     //     e.preventDefault();
+//     //     $('.Btn').fadeOut(500);
+//     // }, function (e) {
+//     //     $('.Btn').fadeIn(500);
+//     // });
+
+//     // $(".button6").mousedown(function (e) {
+//     //     e.preventDefault();
+//     //     $('.btn1').fadeOut(500);
+//     // });
+//     // $(".button6").mouseup(function (e) {
+//     //     e.preventDefault();
+//     //     $('.btn1').fadeIn(500);
+//     // });
+
+//     // $(".button6").mouseenter(function (e) { 
+//     //     e.preventDefault();
+//     //     $('.btn1').fadeOut(500);
+//     // });
+//     // $(".button6").mouseleave(function (e) { 
+//     //     e.preventDefault();
+//     //     $('.btn1').fadeIn(1000);
+//     // });
+
+//     // $(".button6").mousemove(function (e) {
+//     //     // e.preventDefault();
+//     //     const pageX = e.pageX;
+//     //     const pageY = e.pageY;
+//     //     const total = "("+pageX+" , "+pageY+")";
+//     //     $('.btn1').text(total);
+//     // });
+
+//     // $("input[type=text]").keydown(function (e) { 
+//     //     const value = $("input[type=text]").val();
+//     //     $('.btn1').text(value);
+//     // });
+//     // $("input[type=text]").keyup(function (e) { 
+//     //     const value = $("input[type=text]").val().trim();
+//     //     $('.btn1').text(value);
+//     // });
+//     // $("input[type=text]").keypress(function (e) {
+//     //     const value = $("input[type=text]").val();
+//     //     $('.btn1').text(value);
+//     // });
+
+//     // $("input[type=text]").keydown(function (e) { 
+//     //     $(".text").text("Is typing");
+//     // });
+//     // $("input[type=text]").keyup(function (e) { 
+//     //     setInterval(() => {
+//     //         $(".text").text("");
+//     //     }, 6000);
+//     // });
+// });
