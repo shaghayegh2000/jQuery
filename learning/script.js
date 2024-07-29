@@ -2,6 +2,8 @@
 //     $('p').fadeOut(2000);
 // });
 
+// const { ready } = require("jquery");
+
 // $('.button').click(function (e) { 
 //     e.preventDefault();
 //     $('.well').fadeOut(3000);
@@ -243,3 +245,96 @@
 //     });
 // });
 
+
+// const button = document.querySelectorAll('.Btn');
+// const a = document.querySelector('.button6');
+// a.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     button.forEach(Btn => {
+//         if (Btn.currentTarget === this) {
+//             alert("l")
+//         }
+//     });
+// })
+
+// $(function () {
+//     button.forEach(Btn => {
+//         $(Btn).click(function (e) {
+//             e.preventDefault();
+//             button.forEach(Btn => {
+//                 $(Btn).css("color", "black");
+//             })
+//             $(Btn).css("color", "red");
+
+//             // if (e.currentTarget === this) {
+//             //     $(Btn).css("color", "red");
+//             // }
+//             // else {
+//             //     button.forEach(Btn => {
+//             //         $(Btn).css("color", "black");
+//             //     })
+//             // }
+//         });
+//     });
+// })
+
+
+// $(document).ready(function () {
+//     // $(".btn1").click(function (e) { 
+//     //     e.preventDefault();
+//     //     $(".form-group").fadeOut(300);
+//     // });
+
+//     // $(".btn2").dblclick(function (e) { 
+//     //     e.preventDefault();
+//     //     $(".form-group").fadeOut(300);
+//     // });
+
+//     // $(".btn3").hover(function (e) { 
+//     //     e.preventDefault();
+//     //     $(".form-group").fadeOut(300);
+//     // },function () {
+//     //     $(".form-group").fadeIn(300);
+//     // });
+
+//     // $(".btn4").mousedown(function (e) { 
+//     //     e.preventDefault();
+//     //     $(".form-group").fadeOut(300);
+//     // });
+
+//     // $(".btn4").mouseup(function (e) { 
+//     //     e.preventDefault();
+//     //     $(".form-group").fadeIn(300);
+//     // });
+
+
+//     $(".btn1").mousemove(function (e) {
+//         var pageX = e.pageX;
+//         var pageY = e.pageY;
+//         var total = "(" + pageX + " , " + pageY + ")";
+//         $(".button6").text(total);
+//     });
+// });
+
+
+$(document).ready(function () {
+    // $("#input1").keyup(function (e) { 
+    //     var text =$("#input1").val();
+    //     $("#input2").val(text);
+    // });
+
+    // $("#input1").keypress(function (e) { 
+    //     var text =$("#input1").val();
+    //     $("#input2").val(text);
+    // });
+
+    $("#input1").keydown(function (e) { 
+            $(".para").text("is typing ...")
+    });
+
+    $("#input1").keyup(function (e) { 
+        setInterval(() => {
+            $(".para").text("")
+        }, 1000);
+    });
+});
